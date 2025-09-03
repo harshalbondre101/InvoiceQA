@@ -3,29 +3,20 @@
 A tiny web UI to ask questions about invoices (Colab-ready).
 Upload an invoice image, type a question (e.g. “What is the due date?”), and the app returns the model’s extracted answer. Built with Hugging Face document-question-answering pipeline and a Gradio frontend.
 
-###Table of contents
+### Table of contents
 
 Description
-
 Features
-
 Tech stack
-
 Quick Colab (one-click) setup
-
 Local setup
-
 Example usage
-
 Output format
-
 Troubleshooting
-
-##FAQs
-
+FAQs
 License & credits
 
-Description
+### Description
 
 This project wraps the Hugging Face model impira/layoutlm-invoices in a Gradio web interface so you can interactively ask questions about invoices. Useful for quick testing, prototyping, and demos. Not production-ready — use a cloud invoice extraction API for scale.
 
@@ -41,7 +32,7 @@ Runs in Colab or locally (with Tesseract installed)
 
 Minimal, clean Gradio UI
 
-##Tech stack
+## Tech stack
 
 Python 3.8+
 
@@ -57,7 +48,7 @@ Gradio (web UI)
 
 Optional: requests for remote images
 
-###Quick Colab setup (paste into a Colab cell)
+## Quick Colab setup (paste into a Colab cell)
 # 1) System & Python deps
 !apt-get update -y
 !apt-get install -y tesseract-ocr libtesseract-dev
@@ -91,7 +82,7 @@ with gr.Blocks() as demo:
 demo.launch(share=True)
 
 
-##Notes:
+## Notes:
 
 share=True gives a public URL in Colab.
 
